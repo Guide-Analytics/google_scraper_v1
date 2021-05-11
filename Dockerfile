@@ -1,5 +1,9 @@
 FROM apify/actor-node-chrome-xvfb
 
+# Set hosting
+ENV PORT 8080
+ENV HOST 0.0.0.0
+
 # Copy source code
 COPY . ./
 
