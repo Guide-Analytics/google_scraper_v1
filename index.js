@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use('/', require('./src/main'));
+app.use('/', require('./src/main.js'));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
