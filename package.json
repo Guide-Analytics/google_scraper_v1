@@ -10,19 +10,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drobnikj/crawler-google-places.git"
+        "url": "git+https://github.com/Guide-Analytics/ga-google-scraper.git"
     },
     "keywords": [
         "crawler",
         "google",
         "places"
     ],
-    "author": "Jakub Drobnik <drobnik.j@gmail.com>",
+    "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/drobnikj/crawler-google-places/issues"
+        "url": "https://github.com/Guide-Analytics/ga-google-scraper/issues"
     },
-    "homepage": "https://github.com/drobnikj/crawler-google-places#readme",
+    "homepage": "https://github.com/Guide-Analytics/ga-google-scraper#readme",
     "dependencies": {
         "@turf/turf": "^5.1.6",
         "apify": "^0.22.2"
