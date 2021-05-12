@@ -23,7 +23,7 @@ ENV HOST=0.0.0.0
 EXPOSE 8080
 
 # Run the web service on container startup.
-CMD [ "node", "index.js" ]
+CMD [ "node", "index.js", "./src/main.js" ]
 
 
 
