@@ -2,11 +2,11 @@
     "name": "crawler-google-places",
     "version": "1.0.0",
     "description": "",
-    "main": "src/main.js",
+    "main": "index.js",
     "scripts": {
         "test-local": "mocha --file ./test/crawler.local.js",
         "test-platform": "mocha --file ./test/crawler.platform.js",
-        "start": "node ./src/main.js"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
