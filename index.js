@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use('/', require('./src/main.js'));
+const main = require('./src/main.js'));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
@@ -11,3 +11,5 @@ app.listen(port, () => {
 
 exports.app = functions.http.onRequest(app);
 module.exports = { app };
+
+main();
