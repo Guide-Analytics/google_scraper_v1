@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
 
-const main = require('./src/main.js'));
-
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log(`google-scraper: listening on port ${port}`);
-});
+const mmFn = require('./src/main.js'));
 
 export.mainFn = async (req, res) => {
-  main();
+  const port = process.env.PORT || 8080;
+  app.listen(port, () => {
+    console.log(`google-scraper: listening on port ${port}`);
+  });
+
+  mmFn();
+
 };
