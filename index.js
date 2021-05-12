@@ -8,8 +8,6 @@ app.listen(port, () => {
   console.log(`google-scraper: listening on port ${port}`);
 });
 
-
-exports.app = functions.http.onRequest(app);
-module.exports = { app };
-
-main();
+export.mainFn = async (req, res) => {
+  main();
+};
