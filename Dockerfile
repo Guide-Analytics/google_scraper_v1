@@ -1,15 +1,9 @@
 FROM apify/actor-node-chrome-xvfb
 
-# Set hosting
-ENV PORT=8080
-ENV HOST=0.0.0.0
 
 # Copy source code
 COPY . ./
 
-# Set hosting
-ENV PORT=8080
-ENV HOST=0.0.0.0
 
 # Install default dependencies, print versions of everything
 RUN npm --quiet set progress=false \
@@ -22,6 +16,7 @@ RUN npm --quiet set progress=false \
  && npm --version
  
 ENV APIFY_DISABLE_OUTDATED_WARNING=1
+
 # Set hosting
 ENV PORT=8080
 ENV HOST=0.0.0.0
