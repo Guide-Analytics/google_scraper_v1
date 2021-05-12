@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+const main = require('./src/main');
 
+app.use('/', require('./src/main'));
+
+app.get('/', (req, res) => {
+   res.send('Google Scraper');
 });
 
 const port = process.env.PORT || 8080;
