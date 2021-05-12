@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 
-const main = require('./src/main');
-
 app.use('/', require('./src/main'));
 
 app.get('/', (req, res) => {
