@@ -20,6 +20,11 @@ ENV APIFY_DISABLE_OUTDATED_WARNING=1
 # Set hosting
 ENV PORT=8080
 ENV HOST=0.0.0.0
+EXPOSE 8080
+
+# Run the web service on container startup.
+CMD [ "node", "index.js" ]
+
 
 
 # No CMD here because xvfb does its own thing
